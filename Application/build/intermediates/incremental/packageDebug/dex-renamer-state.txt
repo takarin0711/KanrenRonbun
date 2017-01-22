@@ -1,0 +1,7 @@
+#Sun Jan 22 23:24:45 JST 2017
+base.0=C\:\\Users\\Inohiza Takayuki\\AndroidStudioProjects\\SlidingTabsBasic\\Application\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_065e64fe79292d345ee8e0499139f987d2d421cb
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\Users\\Inohiza Takayuki\\AndroidStudioProjects\\SlidingTabsBasic\\Application\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_4115afaa01239a0f66ba95a3cfb2451341aebb5e\\classes.dex
+base.1=C\:\\Users\\Inohiza Takayuki\\AndroidStudioProjects\\SlidingTabsBasic\\Application\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_4115afaa01239a0f66ba95a3cfb2451341aebb5e
+file.0=C\:\\Users\\Inohiza Takayuki\\AndroidStudioProjects\\SlidingTabsBasic\\Application\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_065e64fe79292d345ee8e0499139f987d2d421cb\\classes.dex
