@@ -17,6 +17,8 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/menu_toggle_log"
         android:title="@string/sample_show_log" />
-    <item android:title="Detail" />
-    <item android:title="PDF" />
+    <item android:title="Detail"
+        android:id="@+id/detail1" />
+    <item android:title="PDF"
+        android:id="@+id/pdf1" />
 </menu>

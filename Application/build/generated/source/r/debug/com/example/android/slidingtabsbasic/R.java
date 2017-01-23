@@ -1963,6 +1963,7 @@ containing a value of this type.
         public static final int customPanel=0x7f0a0039;
         public static final int decor_content_parent=0x7f0a0043;
         public static final int default_activity_button=0x7f0a002a;
+        public static final int detail1=0x7f0a0075;
         public static final int disableHome=0x7f0a000c;
         public static final int edit_query=0x7f0a0047;
         public static final int end=0x7f0a001b;
@@ -1994,6 +1995,7 @@ containing a value of this type.
         public static final int notification_main_column=0x7f0a0064;
         public static final int notification_main_column_container=0x7f0a0063;
         public static final int parentPanel=0x7f0a0030;
+        public static final int pdf1=0x7f0a0076;
         public static final int progress_circular=0x7f0a0005;
         public static final int progress_horizontal=0x7f0a0006;
         public static final int radio=0x7f0a003e;

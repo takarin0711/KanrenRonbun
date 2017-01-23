@@ -17,6 +17,8 @@
 
 package com.example.android.slidingtabsbasic;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 import android.view.Menu;
@@ -89,6 +91,16 @@ public class MainActivity extends SampleActivityBase {
                     output.setDisplayedChild(0);
                 }
                 supportInvalidateOptionsMenu();
+                return true;
+            case R.id.detail1:
+                Uri uri = Uri.parse("http://dl.acm.org/citation.cfm?id=2702613.2732817");
+                Intent i = new Intent(Intent.ACTION_VIEW,uri);
+                startActivity(i);
+                return true;
+            case R.id.pdf1:
+                Uri uri2 = Uri.parse("http://delivery.acm.org/10.1145/2740000/2732817/p1277-gao.pdf?ip=130.153.16.7&id=2732817&acc=ACTIVE%20SERVICE&key=D2341B890AD12BFE%2E9E58D7C9B063293D%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&CFID=720019615&CFTOKEN=57948944&__acm__=1485212130_47cc335929753451f0d04045622d2a0e");
+                Intent j = new Intent(Intent.ACTION_VIEW,uri2);
+                startActivity(j);
                 return true;
         }
         return super.onOptionsItemSelected(item);
