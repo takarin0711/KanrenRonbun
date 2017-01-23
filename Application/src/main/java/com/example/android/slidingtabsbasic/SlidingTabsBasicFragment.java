@@ -127,11 +127,11 @@ public class SlidingTabsBasicFragment extends Fragment {
         @Override
         public CharSequence getPageTitle(int position) {
             if (position==0){
-                return "direct touch" ;
+                return "Usability issues" ;
             }else if(position==1){
-                return "auditory feedback";
+                return "Interaction Tequniques";
             }else if(position==2){
-                return "comparative evaluation";
+                return "Configurable Model";
             }else if(position==3){
                 return "the others";
             }
@@ -166,11 +166,10 @@ public class SlidingTabsBasicFragment extends Fragment {
                         "・Occlusion-aware interfaces\n\n" +
                         "・High precision touch screen interaction\n\n" +
                         "・Precise selection techniques for multi-touch screens");*/
-                String[] members = { "Direct-touch vs. mouse input for tabletop displays",
+                String[] members = { "Improving menu placement strategies for pen input",
                         "Evaluating tactile feedback and direct vs. indirect stylus input in pointing and crossing selection tasks",
-                        "Occlusion-aware interfaces",
-                        "High precision touch screen interaction",
-                        "Precise selection techniques for multi-touch screens" };
+                        "Direct Pen Interaction with a Conventional Graphical User Interface",
+                        "Left-Handed Scrolling for Pen-Based Devices"};
 
                 ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity().getBaseContext(),
                         android.R.layout.simple_expandable_list_item_1, members);

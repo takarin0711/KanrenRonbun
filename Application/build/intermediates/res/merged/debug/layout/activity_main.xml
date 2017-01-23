@@ -39,7 +39,7 @@
                   android:paddingRight="@dimen/horizontal_page_margin"
                   android:paddingTop="@dimen/vertical_page_margin"
                   android:paddingBottom="@dimen/vertical_page_margin"
-                  android:text="Use of Sound to Provide Occluded Visual Information in Touch Gestural Interface"
+                  android:text="Occlusion-Aware Interfaces"
                 android:textSize="22sp" />
         </ScrollView>
 

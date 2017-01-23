@@ -1,95 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86"
-    api-level="23"
+    abi="arm64-v8a,armeabi-v7a,armeabi"
+    api-level="24"
     density="xxhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="880556755447580"
+    timestamp="981745553125194"
     token="7129329185650829732"
-    verifier="COMPATIBLE" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="180" />
+        duration="251" />
     <task
         name="instant-run-dex"
-        duration="273" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="14" />
+        duration="182" />
     <task
         name="verifier"
-        duration="1" />
+        duration="72" />
 
     <artifact
-        location="C:\Users\Inohiza Takayuki\AndroidStudioProjects\SlidingTabsBasic\Application\build\intermediates\reload-dex\debug\classes.dex"
-        type="RELOAD_DEX" />
+        location="C:\Users\Inohiza Takayuki\AndroidStudioProjects\SlidingTabsBasic\Application\build\outputs\apk\Application-debug.apk"
+        type="MAIN" />
 
     <build
-        timestamp="865119621692548"
+        timestamp="981745553125194"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\Inohiza Takayuki\AndroidStudioProjects\SlidingTabsBasic\Application\build\outputs\apk\Application-debug.apk"
             type="MAIN" />
-    </build>
-    <build
-        timestamp="879116354197809"
-        verifier="R_CLASS_CHANGE" >
-        <artifact
-            location="C:\Users\Inohiza Takayuki\AndroidStudioProjects\SlidingTabsBasic\Application\build\intermediates\transforms\dex\debug\folders\1000\5\slice_2\classes.dex"
-            type="DEX" />
-        <artifact
-            location="C:\Users\Inohiza Takayuki\AndroidStudioProjects\SlidingTabsBasic\Application\build\intermediates\transforms\dex\debug\folders\1000\5\slice_8\classes.dex"
-            type="DEX" />
-        <artifact
-            location="C:\Users\Inohiza Takayuki\AndroidStudioProjects\SlidingTabsBasic\Application\build\intermediates\transforms\dex\debug\folders\1000\5\slice_0\classes.dex"
-            type="DEX" />
-    </build>
-    <build
-        timestamp="879941373212396"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="C:\Users\Inohiza Takayuki\AndroidStudioProjects\SlidingTabsBasic\Application\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
-            type="RESOURCES" />
-        <artifact
-            location="C:\Users\Inohiza Takayuki\AndroidStudioProjects\SlidingTabsBasic\Application\build\intermediates\builds\debug\879941373212396\classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="879984950631120"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="C:\Users\Inohiza Takayuki\AndroidStudioProjects\SlidingTabsBasic\Application\build\intermediates\builds\debug\879984950631120\classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="880128525211012"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="C:\Users\Inohiza Takayuki\AndroidStudioProjects\SlidingTabsBasic\Application\build\intermediates\builds\debug\880128525211012\classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="880301470964617"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="C:\Users\Inohiza Takayuki\AndroidStudioProjects\SlidingTabsBasic\Application\build\intermediates\builds\debug\880301470964617\classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="880328321691256"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="C:\Users\Inohiza Takayuki\AndroidStudioProjects\SlidingTabsBasic\Application\build\intermediates\builds\debug\880328321691256\classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="880556755447580"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="C:\Users\Inohiza Takayuki\AndroidStudioProjects\SlidingTabsBasic\Application\build\intermediates\reload-dex\debug\classes.dex"
-            type="RELOAD_DEX" />
     </build>
 
 </instant-run>
