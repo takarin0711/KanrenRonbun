@@ -42,6 +42,32 @@ public class SlidingTabsBasicFragment extends Fragment {
 
     static final String LOG_TAG = "SlidingTabsBasicFragment";
 
+    String Page0 = new String("direct touch");
+    String Page1 = new String("auditory feedback");
+    String Page2 = new String("comparative evaluation");
+    String Page3 = new String("the others");
+    String Page4 = new String("");
+
+    String Item00 = new String("Direct-touch vs. mouse input for tabletop displays");
+    String Item01 = new String("Evaluating tactile feedback and direct vs. indirect stylus input in pointing and crossing selection tasks");
+    String Item02 = new String("Occlusion-aware interfaces");
+    String Item03 = new String("High precision touch screen interaction");
+    String Item04 = new String("Precise selection techniques for multi-touch screens");
+    String Item10 = new String("“Writing with music”:exploring the use of auditory feedback in gesture interfaces");
+    String Item11 = new String("Using Audio Cues to Support Motion Gesture Interaction on Mobile Devices");
+    String Item12 = new String("Using sound in multi-touch interfaces to change materiality and touch behavior");
+    String Item13 = new String("");
+    String Item14 = new String("");
+    String Item20 = new String("A comparative evaluation of finger and pen stroke gestures");
+    String Item21 = new String("");
+    String Item22 = new String("");
+    String Item23 = new String("");
+    String Item24 = new String("");
+    String Item30 = new String("Understanding the consistency of users’ pen and finger stroke gesture articulation");
+    String Item31 = new String("");
+    String Item32 = new String("");
+    String Item33 = new String("");
+    String Item34 = new String("");
     /**
      * A custom {@link ViewPager} title strip which looks much like Tabs present in Android v4.0 and
      * above, but is designed to give continuous feedback to the user when scrolling.
@@ -103,6 +129,7 @@ public class SlidingTabsBasicFragment extends Fragment {
          */
 
 
+
         public int getCount() {
             return 10;
         }
@@ -127,13 +154,13 @@ public class SlidingTabsBasicFragment extends Fragment {
         @Override
         public CharSequence getPageTitle(int position) {
             if (position==0){
-                return "direct touch" ;
+                return Page0 ;
             }else if(position==1){
-                return "auditory feedback";
+                return Page1;
             }else if(position==2){
-                return "comparative evaluation";
+                return Page2;
             }else if(position==3){
-                return "the others";
+                return Page3;
             }
             return null;
         }
@@ -155,6 +182,44 @@ public class SlidingTabsBasicFragment extends Fragment {
 
             lv = (ListView) view.findViewById(R.id.listView1);
 
+            lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    //ここに処理を書く
+                    ListView listView = (ListView) parent;
+                    String item = (String) listView.getItemAtPosition(position);
+                    if(item.equals("Occlusion-aware interfaces")){
+                        Page0 = "Usability Issues";
+                        Page1 = "Interaction Techniques";
+                        Page2 = "CONFIGURABLE MODEL";
+                        Page3 = "The Others";
+
+                        Item00 = "Improving menu placement strategies for pen input";
+                        Item01 = "Evaluating tactile feedback and direct vs. indirect stylus input in pointing and crossing selection tasks";
+                        Item02 = "Direct Pen Interaction with a Conventional Graphical User Interface";
+                        Item03 = " Left-Handed Scrolling for Pen-Based Devices";
+                        Item04 = "";
+                        Item10 = " Fluid interaction techniques for the control and annotation of digital video";
+                        Item11 = "CrossY: a crossing-based drawing application";
+                        Item12 = "Beyond paper: supporting active reading with free form digital ink annotations";
+                        Item13 = "Shift: a technique for operating pen-based interfaces using touch";
+                        Item14 = "Precise selection techniques for multi-touch screens";
+                        Item20 = "Hand Occlusion with Tablet-sized Direct Pen Input";
+                        Item21 = "Interactive environmentaware display bubbles";
+                        Item22 = "Shadow tracking on multi-touch tables";
+                        Item23 = "Occlusion-aware menu design for digital tabletops";
+                        Item24 = "";
+                        Item30 = "More than dotting the i's --- foundations for crossing-based interfaces";
+                        Item31 = "Mnemonic rendering: an image-based approach for exposing hidden changes in dynamic displays";
+                        Item32 = "Interactive environmentaware display bubbles";
+                        Item33 = "HybridPointing: fluid switching between absolute and relative pointing with a direct input device";
+                        Item34 = " Interacting with hidden content using content-aware free-space transparency";
+
+                    }
+
+                }
+            });
+
             // Retrieve a TextView from the inflated View, and update it's text
             TextView title = (TextView) view.findViewById(R.id.item_title);
             //title.setText(String.valueOf(position + 1));
@@ -166,11 +231,7 @@ public class SlidingTabsBasicFragment extends Fragment {
                         "・Occlusion-aware interfaces\n\n" +
                         "・High precision touch screen interaction\n\n" +
                         "・Precise selection techniques for multi-touch screens");*/
-                String[] members = { "Direct-touch vs. mouse input for tabletop displays",
-                        "Evaluating tactile feedback and direct vs. indirect stylus input in pointing and crossing selection tasks",
-                        "Occlusion-aware interfaces",
-                        "High precision touch screen interaction",
-                        "Precise selection techniques for multi-touch screens" };
+                String[] members = { Item00, Item01, Item02, Item03, Item04 };
 
                 ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity().getBaseContext(),
                         android.R.layout.simple_expandable_list_item_1, members);
@@ -182,24 +243,21 @@ public class SlidingTabsBasicFragment extends Fragment {
                 /*title.setText("・“Writing with music”:exploring the use of auditory feedback in gesture interfaces\n\n" +
                         "・ Using Audio Cues to Support Motion Gesture Interaction on Mobile Devices\n\n" +
                         "・ Using sound in multi-touch interfaces to change materiality and touch behavior");*/
-                String[] members = { "“Writing with music”:exploring the use of auditory feedback in gesture interfaces",
-                        "Using Audio Cues to Support Motion Gesture Interaction on Mobile Devices",
-                        "Using sound in multi-touch interfaces to change materiality and touch behavior"
-                };
+                String[] members = { Item10, Item11, Item12, Item13, Item14 };
                 ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity().getBaseContext(),
                         android.R.layout.simple_expandable_list_item_1, members);
 
                 lv.setAdapter(adapter);
             }else if(position==2){
                 // title.setText("・A comparative evaluation of finger and pen stroke gestures");
-                String[] members = {"A comparative evaluation of finger and pen stroke gestures"};
+                String[] members = { Item20, Item21, Item22, Item23, Item24 };
                 ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity().getBaseContext(),
                         android.R.layout.simple_expandable_list_item_1, members);
 
                 lv.setAdapter(adapter);
             }else if(position==3){
                 // title.setText("・Understanding the consistency of users’ pen and finger stroke gesture articulation");
-                String[] members = {"Understanding the consistency of users’ pen and finger stroke gesture articulation"};
+                String[] members = { Item30, Item31, Item32, Item33, Item34 };
                 ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity().getBaseContext(),
                         android.R.layout.simple_expandable_list_item_1, members);
 
